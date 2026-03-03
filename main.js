@@ -2,7 +2,7 @@
     let budget = Number(document.getElementById("budget").value);
     let discount = Number(budget * .2).toFixed(2);
     
-    document.getElementById("discount").innerHTML = `$${discount}`;
+    document.getElementById("discount").innerHTML = `{discount}`;
     document.getElementById("discount-box").style.display = "block";
     document.getElementById("discount-box").innerHTML = `
        <div class="container p-5 mt-3 bg-secondary text-dark rounded-3">
@@ -10,7 +10,7 @@
        <button type="button" class="btn btn-outline-info">Acer</button>
        <button type="button" class="btn btn-outline-info">Asus</button>
        <button type="button" class="btn btn-outline-info">Dell</button>
-       <p>Discounts: <span id="discount">${discount}</span> </p>
+       <p>Discounts: <span id="discount">{discount}</span> </p>
        </div>
 
        `
@@ -34,6 +34,7 @@ function seeLocation(){
 
      
 }
+
 
 
 
